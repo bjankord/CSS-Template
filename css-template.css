@@ -1,0 +1,208 @@
+/* ------------------------------------------------------
+ TABEL OF CONTENTS
+---------------------------------------------------------
+ * BASE    - @Font-Face, Normalize.css, Base Styles 
+ * COMMON  - DRY CSS, Helper Classes
+ * LAYOUT  - Major Page Components
+ * MODULES - Minor Page Components
+----------------------------------------------------------*/
+
+/* BASE
+----------------------------------------------------------*/
+/* @Font-Face Fonts
+---------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+/* Modified Normalize.css - http://tinyurl.com/3uepfxn
+---------------------------------------------------------*/
+/* HTML5 Elements
+---------------------------------------------------------*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block}
+audio, canvas, video {display: inline-block; *display: inline; *zoom: 1;}
+audio:not([controls]) {display: none}
+/* Font Sizing
+---------------------------------------------------------*/
+html {font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+/* Links
+---------------------------------------------------------*/
+a:focus {outline: thin dotted #333; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px;}
+a:hover, a:active {outline: 0}
+sub, sup {position: relative; font-size: 75%; line-height: 0; vertical-align: baseline;}
+sup {top: -0.5em}
+sub {bottom: -0.25em}
+/* Text - Need to review
+--------------------------------------------------------*/
+p {padding-bottom: 1em}
+::-moz-selection {background: #b3d4ff; color: #fff;}
+::selection {background: #b3d4ff;color: #fff;}
+
+/* Lists
+ * Nested lists have no top/bottom margins
+---------------------------------------------------------*/
+ul, ol { margin: 1em 0 1em 1.1em }
+ol { margin-left: 1.5em }
+ul ul, ul ol, ol ul, ol ol {margin: .3em 0 .3em 1.1em;}
+/* Images - Need to review
+---------------------------------------------------------*/
+img {height: auto; border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle;}
+/* Forms - Need to review
+---------------------------------------------------------*/
+button, input, select, textarea {font-size: 100%; vertical-align: middle;}
+button, input {*overflow: visible; line-height: normal;}
+button::-moz-focus-inner, input::-moz-focus-inner {padding: 0; border: 0;}
+button, input[type="button"], input[type="reset"], input[type="submit"] {cursor: pointer; -webkit-appearance: button;}
+input[type="search"] {-webkit-appearance: textfield; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;}
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {-webkit-appearance: none}
+textarea {overflow: auto; vertical-align: top;}
+
+/* Margin Reset
+----------------------------------------------------------*/
+body, button, input, select, textarea{margin:0}
+
+/* Base Styles
+----------------------------------------------------------*/
+body {
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-size: 13px;
+ line-height: 18px;  
+ color: #333333;
+ background-color: #ffffff;
+}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+
+/* COMMON - DRY CSS - http://tinyurl.com/7fkc5vo
+---------------------------------------------------------*/ 
+/* Font Sizes - http://tinyurl.com/65l7wg3
+---------------------------------------------------------*/
+h1, .page-title {
+	font-size:24px; font-size:1.5rem;
+}
+h2, .legend, a#menu-btn, a.form-btn, input.form-btn {
+	font-size:20px; font-size:1.25rem;
+}
+h3, .sub-header, #submit-btn {
+	font-size:18px; font-size:1.125rem;
+}
+h4, .main-nav a {
+	font-size:16px; font-size:1rem;
+}
+h5, .field-label {
+	font-size:14px; font-size:0.875rem;
+}
+
+/* Line Heights  - Need to review
+---------------------------------------------------------*/
+h1, .page-title {
+	line-height: 18px;  
+}
+h2 {
+	line-height: 18px;  
+}
+h3 {
+	line-height: 18px;  
+}
+h4 {
+	line-height: 18px;  
+}
+h5 {
+	line-height: 18px;  
+}
+
+/* Font Families
+---------------------------------------------------------*/
+.page-title{font-family: "Lato", Arial, Helvetica, sans-serif; }
+
+/* Font Styles
+---------------------------------------------------------*/
+.page-title, .field-label{font-weight: bold;}
+
+/* Colors
+---------------------------------------------------------*/
+a{color: #0088cc;}
+a:hover{color: #005580;}
+
+/* Helper Classes
+----------------------------------------------------------*/
+.hide-text {overflow: hidden; text-indent: 100%; white-space: nowrap;}
+.page-title{padding-bottom:20px;}
+
+/* Clearfix
+---------------------------------------------------------*/
+.clearfix {*zoom: 1}
+.clearfix:before, .clearfix:after {display: table; content: "";}
+.clearfix:after {clear: both}
+.clr {background: none; clear: both; font-size: 0; height: 0; line-height: 0;}
+.ofclear {overflow: hidden}
+
+
+
+/* LAYOUT
+---------------------------------------------------------*/
+.container {
+	max-width: 533px;
+	margin: 0 auto;
+	background:#fff;
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	   -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+            box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+
+/* Header
+---------------------------------------------------------*/
+.header{}
+
+/* Main-Nav
+---------------------------------------------------------*/
+.main-nav{}
+
+/* Body
+---------------------------------------------------------*/
+.body{}
+
+/* Main-Col
+---------------------------------------------------------*/
+.main-col{}
+
+/* Side-Col
+---------------------------------------------------------*/
+.side-col{}
+
+/* Footer
+---------------------------------------------------------*/
+.footer{}
+
+
+
+/* MODULES
+---------------------------------------------------------*/
+/* Header
+---------------------------------------------------------*/
+.logo{}
+.sub-header{}
+.header-aside{}
+
+/* Main-Nav
+---------------------------------------------------------*/
+.main-nav{}
+
+/* Body
+---------------------------------------------------------*/
+.body{}
+
+/* Main-Col
+---------------------------------------------------------*/
+.content{}
+
+/* Side-Col
+---------------------------------------------------------*/
+.form-mod{}
+.form{}
+.form-header{}
+.form-body{}
+.footer-nav{}
+
+/* Footer
+---------------------------------------------------------*/
+.footer-nav{}
